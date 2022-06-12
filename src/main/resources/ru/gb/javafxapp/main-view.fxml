@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="ru.gb.javafxapp.Controller">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right = "20.0" top="20.0"/>
+    </padding>
+    <MenuBar>
+        <Menu text ="File">
+            <MenuItem text ="Exit Game" onAction="#Exit" />
+        </Menu>
+    </MenuBar>
+        <TextArea fx:id="historyArea" editable="false" prefHeight="193.0" prefWidth="441.0" VBox.vgrow="ALWAYS"/>
+        <HBox spacing="20">
+            <TextField fx:id="userAnswer" HBox.hgrow="ALWAYS"/>
+            <Button defaultButton="true" onAction="#clickCheckButton" text="Check"/>
+        </HBox>
+
+</VBox>
